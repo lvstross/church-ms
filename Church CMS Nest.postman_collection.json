@@ -106,7 +106,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/event/5",
+							"raw": "http://localhost:3000/event/62deeb31a9787bf8152d1747",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -114,7 +114,7 @@
 							"port": "3000",
 							"path": [
 								"event",
-								"5"
+								"62deeb31a9787bf8152d1747"
 							]
 						}
 					},
@@ -172,7 +172,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/event/5",
+							"raw": "http://localhost:3000/event/62deeb31a9787bf8152d1747",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -180,7 +180,146 @@
 							"port": "3000",
 							"path": [
 								"event",
-								"5"
+								"62deeb31a9787bf8152d1747"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Blog Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"My second blog\",\n    \"subtitle\": \"Subtitle of second blog\",\n    \"author\": \"Levi Gonzales\",\n    \"body\": \"Some body content\",\n    \"status\": \"draft\",\n    \"tags\": \"worship, communion, preaching\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/blog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog by Id",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"My updated title\",\n    \"subtitle\": \"my updated subtitle\",\n    \"author\": \"Levi Gonzales\",\n    \"body\": \"Some body content\",\n    \"status\": \"published\",\n    \"tags\": \"worship, communion, preaching, another\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/blog/62df5f3a0bc73d3535550304",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"62df5f3a0bc73d3535550304"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/62df5f3a0bc73d3535550304",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"62df5f3a0bc73d3535550304"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blog by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/blog/62df5f8c0bc73d353555030a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"62df5f8c0bc73d353555030a"
 							]
 						}
 					},
