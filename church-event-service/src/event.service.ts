@@ -14,7 +14,7 @@ export class EventService {
     return createdEvent.save();
   }
 
-  async findAll(): Promise<Event []> {
+  async findAll(): Promise<Event[]> {
     return this.eventModel.find().exec();
   }
 
