@@ -6,7 +6,7 @@ import { Event, EventSchema } from './schemas/event.schema';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/church-ms'),
+    MongooseModule.forRoot('mongodb://mongo/church-ms'),
     MongooseModule.forFeature([{ name: Event.name, schema: EventSchema }])
   ],
   controllers: [EventController],

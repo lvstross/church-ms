@@ -1,0 +1,32 @@
+version: '3.3'
+services:
+  # web:
+  #   container_name: church-event-service
+  #   restart: always
+  #   build: .
+  #   ports:
+  #     - '3000:3000'
+  #   links:
+  #     - mongo
+  #   depends_on:
+  #     - mongo
+  #   volumes:
+  #     - .:/usr/src/app
+  #     - /usr/src/app/node_modules
+  #   networks:
+  #     - nestjs-network
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./database:/data/db
+    ports:
+      - '27017:27017'
+    # networks:
+    #   - nestjs-network
+    restart: always
+
+# networks:
+#     nestjs-network:
+#       driver: bridge
