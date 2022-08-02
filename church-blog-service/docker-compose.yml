@@ -1,9 +1,9 @@
 version: '3.3'
 services:
   web:
-    container_name: church-event-service
+    container_name: church-blog-service
     restart: always
-    image: lvstross/church-event-service:1.0.2
+    image: lvstross/church-blog-service:1.0.0
     ports:
       - '3000:3000'
     depends_on:

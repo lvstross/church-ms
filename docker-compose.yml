@@ -1,0 +1,44 @@
+version: '3.3'
+services:
+  blog-service:
+    container_name: church-blog-service
+    restart: always
+    image: lvstross/church-blog-service:1.0.0
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+    volumes:
+      - ./church-blog-service:/usr/src/app
+      - ./church-blog-service/node_modules:/usr/src/app/node_modules
+    networks:
+      - services-network
+
+  event-service:
+    container_name: church-event-service
+    restart: always
+    image: lvstross/church-event-service:1.0.2
+    ports:
+      - '3001:3000'
+    depends_on:
+      - mongo
+    volumes:
+      - ./church-event-service:/usr/src/app
+      - ./church-event-service/node_modules:/usr/src/app/node_modules
+    networks:
+      - services-network
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./database:/data/db
+    ports:
+      - '27017:27017'
+    networks:
+      - services-network
+    restart: always
+
+networks:
+    services-network:
+      driver: bridge
