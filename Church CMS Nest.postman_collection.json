@@ -32,7 +32,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Another record\",\n    \"description\": \"Event description\",\n    \"coordinator\": \"Levi Gonzales\",\n    \"location\": \"The nearby park\",\n    \"startTime\": \"2022-06-13 08:25:46\",\n    \"endTime\": \"2022-06-13 08:25:46\"\n}",
+							"raw": "{\n    \"title\": \"Test Docker Event Service\",\n    \"description\": \"Event description\",\n    \"coordinator\": \"Levi Gonzales\",\n    \"location\": \"The nearby park\",\n    \"startTime\": \"2022-06-13 08:25:46\",\n    \"endTime\": \"2022-06-13 08:25:46\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -40,12 +40,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/event",
-							"protocol": "http",
+							"raw": "{{EVENT_SERVICE_URL}}/event",
 							"host": [
-								"localhost"
+								"{{EVENT_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"event"
 							]
@@ -62,12 +60,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/event",
-							"protocol": "http",
+							"raw": "{{EVENT_SERVICE_URL}}/event",
 							"host": [
-								"localhost"
+								"{{EVENT_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"event"
 							]
@@ -106,12 +102,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/event/62deeb31a9787bf8152d1747",
-							"protocol": "http",
+							"raw": "{{EVENT_SERVICE_URL}}/event/62deeb31a9787bf8152d1747",
 							"host": [
-								"localhost"
+								"{{EVENT_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"event",
 								"62deeb31a9787bf8152d1747"
@@ -136,12 +130,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/event/4",
-							"protocol": "http",
+							"raw": "{{EVENT_SERVICE_URL}}/event/4",
 							"host": [
-								"localhost"
+								"{{EVENT_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"event",
 								"4"
@@ -172,12 +164,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/event/62deeb31a9787bf8152d1747",
-							"protocol": "http",
+							"raw": "{{EVENT_SERVICE_URL}}/event/62deeb31a9787bf8152d1747",
 							"host": [
-								"localhost"
+								"{{EVENT_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"event",
 								"62deeb31a9787bf8152d1747"
@@ -212,12 +202,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/blog",
-							"protocol": "http",
+							"raw": "{{BLOG_SERVICE_URL}}/blog",
 							"host": [
-								"localhost"
+								"{{BLOG_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"blog"
 							]
@@ -231,12 +219,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/blog",
-							"protocol": "http",
+							"raw": "{{BLOG_SERVICE_URL}}/blog",
 							"host": [
-								"localhost"
+								"{{BLOG_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"blog"
 							]
@@ -265,12 +251,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/blog/62df5f3a0bc73d3535550304",
-							"protocol": "http",
+							"raw": "{{BLOG_SERVICE_URL}}/blog/62df5f3a0bc73d3535550304",
 							"host": [
-								"localhost"
+								"{{BLOG_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"blog",
 								"62df5f3a0bc73d3535550304"
@@ -285,12 +269,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/blog/62df5f3a0bc73d3535550304",
-							"protocol": "http",
+							"raw": "{{BLOG_SERVICE_URL}}/blog/62df5f3a0bc73d3535550304",
 							"host": [
-								"localhost"
+								"{{BLOG_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"blog",
 								"62df5f3a0bc73d3535550304"
@@ -311,12 +293,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/blog/62df5f8c0bc73d353555030a",
-							"protocol": "http",
+							"raw": "{{BLOG_SERVICE_URL}}/blog/62df5f8c0bc73d353555030a",
 							"host": [
-								"localhost"
+								"{{BLOG_SERVICE_URL}}"
 							],
-							"port": "3000",
 							"path": [
 								"blog",
 								"62df5f8c0bc73d353555030a"
